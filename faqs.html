@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.gif" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="./css/all.min.css" rel="stylesheet" />
+    <title>Henrietta&#174; - FAQs</title>
+  </head>
+  <body>
+    <div id="preloader" class="preloader">
+      <div class="preloader-content">
+        <p class="preloader-text">Loading...</p>
+        <div class="preloader-spinner">
+          <img src="./images/egg1.gif" alt="." class="preloader-spinner-unit" />
+          <img src="./images/egg2.gif" alt="." class="preloader-spinner-unit" />
+          <img src="./images/egg1.gif" alt="." class="preloader-spinner-unit" />
+          <img src="./images/egg2.gif" alt="." class="preloader-spinner-unit" />
+        </div>
+      </div>
+    </div>
+    <header id="pageHeader" class="header centered"></header>
+    <nav id="pageNav" data-active="faqs" class="myNav-sticky"></nav>
+    <!-- +++++++++++++++++++++ page contents +++++++++++++++++++++ -->
+    <main class="page">
+      <article class="section-large" aria-labelledby="fh1">
+        <!-- +++++++++++++++++++++ FAQs +++++++++++++++++++++ -->
+        <div class="section-title">
+          <h1 class="h1 section-title-text" id="fh1">FAQs</h1>
+        </div>
+        <section
+          class="normal-text-with-icon fixedWidth"
+          aria-label="FAQs introduction"
+        >
+          <i class="fas fa-question-circle"></i>
+          <p class="normal-text">
+            Frequently asked questions and their answers are presented below. If
+            you have further questions, please don't hesitate to
+            <a href="contact.html">Contact Us</a>.
+          </p>
+        </section>
+        <form id="searchForm" aria-label="Search FAQs">
+          <input
+            name="searchFaqs"
+            id="searchFaqs"
+            class="searchFaqs"
+            type="text"
+            placeholder="Search FAQs"
+            autocomplete="off"
+          />
+          <button
+            type="submit"
+            id="searchFaqsSubmit"
+            class="btn searchFaqsBtn"
+            title="Search"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+          <button
+            type="reset"
+            id="searchFaqsReset"
+            class="btn searchFaqsBtn"
+            title="Clear search"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </form>
+        <section
+          class="section-fixed-width"
+          id="faqsContainer"
+          aria-label="Frequently asked questions"
+        ></section>
+        <!-- +++++++++++++++++ End of FAQs +++++++++++++++++ -->
+      </article>
+    </main>
+    <!-- +++++++++++++++++ End of Page Contents +++++++++++++++++ -->
+    <footer id="pageFooter" class="bottomPart"></footer>
+    <script src="./app.js"></script>
+    <script src="./faqs.js"></script>
+    <script src="./cursor.js"></script>
+  </body>
+</html>
