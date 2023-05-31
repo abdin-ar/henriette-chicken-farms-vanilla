@@ -1191,9 +1191,9 @@ img {
 @media screen and (min-width: 680px) {
   .slider-container {
     width: calc(90vw - 12rem);
-    max-width: 100vh;
+    max-width: min(100vh, 800px);
     height: calc((90vw - 12rem) / 4 * 2.5);
-    max-height: calc(100vh / 4 * 2.5);
+    max-height: min(calc(100vh / 4 * 2.5), 540px);
   }
   .btn-container {
     display: flex;
@@ -1509,7 +1509,7 @@ img {
 }
 .content-with-images-img-container {
   width: 100%;
-  background: var(--secondary1);
+  background: var(--secondary3);
   position: relative;
 }
 .content-with-images-img-logo img {
